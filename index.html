@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
-      color: #2e8b57; /* Green color matching logo */
+      color: #2e8b57;
     }
     header {
       background-color: #1a1a1a;
@@ -23,11 +23,20 @@
       margin: 0 1rem;
       text-decoration: none;
     }
+    .logo-banner {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .logo-banner img {
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
     .hero {
       background: url('https://via.placeholder.com/1200x400?text=Patriot+Lawn+Care') no-repeat center center/cover;
-      color: #2e8b57; /* Green text */
+      color: #2e8b57;
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 2rem 1rem;
     }
     .section {
       padding: 2rem 1rem;
@@ -52,10 +61,7 @@
 </head>
 <body>
   <header>
-    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-      <img src="patriot-logo.PNG" alt="Patriot Lawn Care Logo" style="height:80px;">
-      <h1 style="margin: 0; color: white;">Patriot Lawn Care</h1>
-    </div>
+    <h1 style="margin: 0; color: white;">Patriot Lawn Care</h1>
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About Us</a>
@@ -63,8 +69,11 @@
     </nav>
   </header>
 
+  <div class="logo-banner">
+    <img src="patriot-logo.PNG" alt="Patriot Lawn Care Logo">
+  </div>
+
   <section class="hero">
-    <h2>You grow it, we mow it.</h2>
     <p>Veteran owned. Community driven.</p>
   </section>
 
@@ -105,4 +114,3 @@
   </footer>
 </body>
 </html>
-
