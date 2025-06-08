@@ -9,11 +9,15 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background: linear-gradient(to bottom, #e0f5dc, #c6e8bd);
+      background-image: url('https://images.unsplash.com/photo-1591076482161-21d3800e7000?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color: #2e8b57;
     }
     header {
-      background-color: #1a1a1a;
+      background-color: rgba(26, 26, 26, 0.9);
       color: white;
       padding: 1rem;
       text-align: center;
@@ -27,44 +31,80 @@
       text-align: center;
       margin-top: 1rem;
     }
-    .logo-banner img {
-      max-width: 100%;
-      height: auto;
-      max-height: 300px;
+    100px
     }
     .hero {
-      background: url('https://via.placeholder.com/1200x400?text=Patriot+Lawn+Care') no-repeat center center/cover;
+      background: rgba(255, 255, 255, 0.7);
       color: #2e8b57;
       text-align: center;
       padding: 2rem 1rem;
     }
     .section {
+      background-color: rgba(255, 255, 255, 0.85);
       padding: 2rem 1rem;
       max-width: 1000px;
-      margin: auto;
+      margin: 2rem auto;
+      border-radius: 8px;
     }
     .section h2 {
       color: #2e8b57;
     }
     .services ul {
-      list-style-type: square;
-      padding-left: 1.5rem;
+      list-style-type: none;
+      padding: 0;
+    }
+    .services li {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      background-color: #e9f5e9;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: #2e8b57;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #256b46;
+    }
+    .testimonials blockquote {
+      font-style: italic;
+      background-color: #e9f5e9;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid #2e8b57;
     }
     footer {
-      background-color: #1a1a1a;
+      background-color: rgba(26, 26, 26, 0.9);
       color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
     }
+    .icon {
+      margin-right: 0.5rem;
+    }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <header>
-    <h1 style="margin: 0; color: white;">Patriot Lawn Care</h1>
+    <h1 style="margin: 0; color: white;"><i class="fas fa-tractor icon"></i>Patriot Lawn Care</h1>
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About Us</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -78,18 +118,19 @@
   </section>
 
   <section class="section services" id="services">
-    <h2>Our Services</h2>
+    <h2><i class="fas fa-seedling icon"></i>Our Services & Pricing</h2>
     <ul>
-      <li>Professional Mowing</li>
-      <li>Edging and Trimming</li>
-      <li>Leaf Cleanup</li>
-      <li>Seasonal Lawn Packages</li>
-      <li>Bundle Deals Available</li>
+      <li><strong>Lawn Mowing:</strong> $40 per visit (1/4 acre)</li>
+      <li><strong>Edging & Trimming:</strong> Included with mowing</li>
+      <li><strong>Leaf Cleanup:</strong> $50–$150 depending on yard size</li>
+      <li><strong>Weekly Service Bundle:</strong> $140/month (up to 1/4 acre)</li>
+      <li><strong>Biweekly Service Bundle:</strong> $80/month (up to 1/4 acre)</li>
+      <li><strong>Spring & Fall Cleanups:</strong> Starting at $100</li>
     </ul>
   </section>
 
   <section class="section" id="about">
-    <h2>About Us</h2>
+    <h2><i class="fas fa-flag-usa icon"></i>About Us</h2>
     <p><strong>Veteran Owned. Community Driven. Mission Focused.</strong></p>
     <p>
       Patriot Lawn Care was founded by veterans with a passion for continuing service — this time, in the neighborhoods we call home. After proudly serving our country, we’ve returned with a new mission: to serve our communities with the same integrity, discipline, and attention to detail that defined our time in uniform.
@@ -102,11 +143,25 @@
     </p>
   </section>
 
+  <section class="section testimonials" id="testimonials">
+    <h2><i class="fas fa-comment-dots icon"></i>What Our Customers Say</h2>
+    <blockquote>"Patriot Lawn Care does an amazing job every time. Always on time, always professional." – Sarah M.</blockquote>
+    <blockquote>"The best lawn service we’ve ever had. Veteran-owned and it shows in the quality." – James T.</blockquote>
+    <blockquote>"Dependable, friendly, and my yard has never looked better!" – Laura B.</blockquote>
+  </section>
+
   <section class="section" id="contact">
-    <h2>Contact Us</h2>
+    <h2><i class="fas fa-envelope icon"></i>Contact Us</h2>
     <p><strong>Phone:</strong> (276) 237-7485</p>
     <p><strong>Email:</strong> lawnsbypatriots@gmail.com</p>
     <p><strong>Service Area:</strong> Ashe County, NC and surrounding areas</p>
+
+    <form action="mailto:lawnsbypatriots@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane icon"></i>Send Message</button>
+    </form>
   </section>
 
   <footer>
@@ -114,3 +169,4 @@
   </footer>
 </body>
 </html>
+
