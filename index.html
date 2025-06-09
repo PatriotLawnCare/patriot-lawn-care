@@ -30,33 +30,42 @@
       font-weight: bold;
     }
     .hero {
-      background: url('background.jpg') no-repeat center/cover;
+      display: flex;
       height: 70vh;
+      width: 100%;
+    }
+    .hero-left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #cfe9cd;
+    }
+    .hero-left img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      padding: 1rem;
+    }
+    .hero-right {
+      flex: 1;
+      background: url('background.jpg') no-repeat center/cover;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
       color: white;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
       padding: 2rem;
     }
-    .hero-content {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      max-width: 1200px;
+    .hero-right-content {
+      max-width: 500px;
     }
-    .hero-content img {
-      height: 250px;
-      max-width: 100%;
-    }
-    .hero-content div {
-      max-width: 600px;
-    }
-    .hero-content h1 {
-      font-size: 2.8rem;
+    .hero-right-content h1 {
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
-    .hero-content p {
+    .hero-right-content p {
       font-size: 1.5rem;
     }
     .section {
@@ -114,9 +123,11 @@
 </nav>
 
 <section class="hero">
-  <div class="hero-content">
+  <div class="hero-left">
     <img src="patriot-logo.PNG" alt="Patriot Lawn Care Logo">
-    <div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-content">
       <h1>Professional Lawn Care Services</h1>
       <p>Keeping your yard healthy, clean, and beautiful all year long.</p>
     </div>
