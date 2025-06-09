@@ -14,20 +14,9 @@
       color: #000;
     }
     header {
-      background: #cfe9cd; /* soft light green */
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: #cfe9cd;
       padding: 1rem;
-    }
-    header img {
-      height: 60px;
-      margin-right: 1rem;
-    }
-    header .tagline {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: #2e8b57;
+      text-align: center;
     }
     nav {
       background: #1a1a1a;
@@ -48,16 +37,27 @@
       align-items: center;
       color: white;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-      text-align: center;
       padding: 2rem;
     }
     .hero-content {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 2rem;
+      max-width: 1200px;
     }
     .hero-content img {
-      height: 100px;
+      height: 250px;
+      max-width: 100%;
+    }
+    .hero-content div {
+      max-width: 600px;
+    }
+    .hero-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .hero-content p {
+      font-size: 1.5rem;
     }
     .section {
       padding: 4rem 1rem;
@@ -103,8 +103,7 @@
 <body>
 
 <header>
-  <img src="patriot-logo.PNG" alt="Patriot Lawn Care Logo">
-  <div class="tagline">Veteran owned. Community driven.</div>
+  <h2>Veteran owned. Community driven.</h2>
 </header>
 
 <nav>
