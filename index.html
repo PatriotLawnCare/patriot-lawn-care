@@ -3,176 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="google-site-verification" content="zAxdZfdG1-Q4ZcBPGwges5zmOQU_NWcAJVOtvBulttI" />
   <title>Patriot Lawn Care</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-
     body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      color: black;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background: #f4f4f4;
+      color: #000;
     }
     header {
-      background-color: #e9f5e9;
+      background: #cfe9cd; /* soft light green */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    header img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+    header .tagline {
+      font-weight: bold;
+      font-size: 1.2rem;
       color: #2e8b57;
+    }
+    nav {
+      background: #1a1a1a;
       padding: 1rem;
       text-align: center;
     }
-    header nav a {
-      color: #2e8b57;
+    nav a {
+      color: white;
       margin: 0 1.5rem;
       text-decoration: none;
       font-weight: bold;
     }
     .hero {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .hero-content {
+      background: url('background.jpg') no-repeat center/cover;
+      height: 70vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      flex-wrap: nowrap;
-      background-color: #e9f5e9;
-      padding: 1.5rem;
-      border-radius: 8px;
-      gap: 1rem;
-    }
-    .hero-content img {
-      max-height: 200px;
-    }
-    .hero-content p {
-      font-size: 1.8rem;
-      margin: 0;
-      color: black;
-    }
-    .btn-cta {
-      margin-top: 1rem;
-      background-color: #2e8b57;
+      align-items: center;
       color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 4px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 2rem;
     }
     .section {
-      padding: 4rem 1rem 2rem;
+      padding: 4rem 1rem;
       max-width: 1200px;
       margin: auto;
-      margin-top: 60px;
     }
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
     .service-card {
-      background: #fff;
-      border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-      color: black;
-    }
-    .service-card i {
-      font-size: 2rem;
-      color: #2e8b57;
-      margin-bottom: 0.75rem;
-    }
-    .service-card h3 {
-      margin: 0.5rem 0;
-      color: #2e8b57;
-    }
-    .testimonials {
-      background: #f9fff9;
-      padding: 2rem 1rem;
-      border-radius: 8px;
-    }
-    .testimonial {
       background: white;
       padding: 1rem;
-      margin-bottom: 1rem;
-      border-left: 4px solid #2e8b57;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      color: black;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .service-card h3 {
+      color: #2e8b57;
+      margin-top: 1rem;
     }
     footer {
       background: #1a1a1a;
       color: white;
       text-align: center;
       padding: 2rem 1rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="#services">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <img src="patriot-logo.PNG" alt="Patriot Lawn Care Logo">
+  <div class="tagline">Veteran owned. Community driven.</div>
 </header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
 <section class="hero">
-  <div class="hero-content">
-    <img src="patriot-logo.PNG" alt="Patriot Lawn Care Logo">
-    <p>Veteran owned. Community driven.</p>
+  <div>
+    <h1>Professional Lawn Care Services</h1>
+    <p>Keeping your yard healthy, clean, and beautiful all year long.</p>
   </div>
-  <a href="contact.html" class="btn-cta">Get A Free Quote</a>
 </section>
 
-<section class="section services" id="services">
-  <h2>Our Services & Pricing</h2>
+<section class="section">
+  <h2 style="text-align: center; color: #2e8b57;">Our Services</h2>
   <div class="services-grid">
     <div class="service-card">
-      <i class="fas fa-mower"></i>
-      <h3>Lawn Mowing</h3>
-      <p>$40 per visit (1/4 acre)</p>
+      <h3>Lawn Mowing & Edging</h3>
+      <p>Reliable, professional lawn maintenance.</p>
     </div>
     <div class="service-card">
-      <i class="fas fa-cut"></i>
-      <h3>Edging & Trimming</h3>
-      <p>Included with mowing</p>
+      <h3>Fertilization</h3>
+      <p>Promote lush, green growth with seasonal treatments.</p>
     </div>
     <div class="service-card">
-      <i class="fas fa-leaf"></i>
-      <h3>Leaf Cleanup</h3>
-      <p>$50–$150 depending on yard size</p>
+      <h3>Weed Control</h3>
+      <p>Prevent and eliminate lawn weeds.</p>
     </div>
     <div class="service-card">
-      <i class="fas fa-calendar-week"></i>
-      <h3>Weekly Bundle</h3>
-      <p>$140/month (up to 1/4 acre)</p>
+      <h3>Aeration & Overseeding</h3>
+      <p>Improve soil health and encourage regrowth.</p>
     </div>
     <div class="service-card">
-      <i class="fas fa-calendar-alt"></i>
-      <h3>Biweekly Bundle</h3>
-      <p>$80/month (up to 1/4 acre)</p>
+      <h3>Mulching & Bed Care</h3>
+      <p>Clean, well-maintained landscape beds.</p>
     </div>
     <div class="service-card">
-      <i class="fas fa-seedling"></i>
-      <h3>Spring/Fall Cleanup</h3>
-      <p>Starting at $100</p>
+      <h3>Leaf Removal</h3>
+      <p>Fall cleanup made simple and efficient.</p>
     </div>
   </div>
-</section>
-
-<section class="section testimonials" id="testimonials">
-  <h2>What Our Customers Say</h2>
-  <div class="testimonial">“Patriot Lawn Care does an amazing job every time. Always on time, always professional.” – Sarah M.</div>
-  <div class="testimonial">“The best lawn service we’ve ever had. Veteran-owned and it shows in the quality.” – James T.</div>
-  <div class="testimonial">“Dependable, friendly, and my yard has never looked better!” – Laura B.</div>
 </section>
 
 <footer>
@@ -181,4 +139,3 @@
 
 </body>
 </html>
-
