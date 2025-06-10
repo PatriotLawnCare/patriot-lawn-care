@@ -1,110 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services | Patriot Lawn Care</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Services - Patriot Lawn Care</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #2e8b57;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #000;
     }
-    header, footer {
-      background-color: #1a1a1a;
-      color: white;
+    header, nav, footer {
       text-align: center;
+      background-color: #1a4d1a;
+      color: white;
       padding: 1rem;
     }
     nav a {
       color: white;
-      margin: 0 1.5rem;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
     .section {
-      padding: 3rem 1rem;
-      max-width: 800px;
+      max-width: 1200px;
       margin: auto;
+      padding: 2rem 1rem;
     }
-    h1, h2 {
+    .section h2 {
       text-align: center;
-    }
-    .service {
+      color: #2e8b57;
       margin-bottom: 2rem;
     }
-    .service h3 {
-      color: #2e8b57;
-      margin-bottom: 0.5rem;
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
     }
-    .service p {
-      margin: 0.25rem 0;
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .service-card h3 {
+      color: #2e8b57;
+      margin: 1rem 0 0.5rem;
+    }
+    .bundle-section {
+      background: #e0f5e6;
+      padding: 2rem 1rem;
+      border-radius: 8px;
+      margin-top: 3rem;
+    }
+    .bundle-section h2 {
+      color: #2e8b57;
+      text-align: center;
+    }
+    .bundle-section ul {
+      max-width: 700px;
+      margin: 1rem auto;
+      list-style: none;
+      padding: 0;
+    }
+    .bundle-section ul li {
+      padding: 0.75rem;
+      font-weight: bold;
+      border-bottom: 1px solid #ccc;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .btn-cta {
+      display: inline-block;
+      background: #2e8b57;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1rem;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <h1>Our Lawn Care Services</h1>
 </header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
 <section class="section">
-  <h1>Our Services</h1>
-
-  <div class="service">
-    <h3>Lawn Mowing & Edging</h3>
-    <p>Keep your lawn neat and sharp all season.</p>
-    <p>Weekly or bi-weekly</p>
-    <p><strong>$30–$70 per visit</strong></p>
+  <h2>What We Offer</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="images/lawn-mowing.jpeg" alt="Lawn Mowing">
+      <h3>Lawn Mowing</h3>
+      <p>Includes mowing, trimming, and cleanup for up to 1/4 acre.</p>
+      <p><strong>$40 per visit</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="images/fertilizer.jpeg" alt="Fertilization">
+      <h3>Fertilization</h3>
+      <p>Boost lawn health with professional nutrient treatments.</p>
+      <p><strong>Starting at $45 per treatment</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="images/weed-control.jpeg" alt="Weed Control">
+      <h3>Weed Control</h3>
+      <p>Prevents and eliminates invasive weeds from your yard.</p>
+      <p><strong>Starting at $45 per treatment</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="images/aeration.jpeg" alt="Aeration">
+      <h3>Aeration</h3>
+      <p>Loosens soil to encourage deeper root growth and healthier grass.</p>
+      <p><strong>$100 per treatment</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="images/mulch.jpeg" alt="Mulching">
+      <h3>Mulching</h3>
+      <p>Seasonal mulch application to enhance soil and aesthetics.</p>
+      <p><strong>Starting at $125</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="images/leaf-pickup.jpeg" alt="Leaf Removal">
+      <h3>Leaf Removal</h3>
+      <p>Full-service fall leaf cleanup to maintain a healthy yard.</p>
+      <p><strong>$50–$150 based on yard size</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="images/trimming.jpeg" alt="Edging and Trimming">
+      <h3>Edging & Trimming</h3>
+      <p>Detailed edge cutting along sidewalks, driveways, and beds.</p>
+      <p><strong>Included with mowing</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="images/mulch.jpeg" alt="Spring/Fall Cleanup">
+      <h3>Spring & Fall Cleanup</h3>
+      <p>Remove debris, prep beds, and refresh your lawn seasonally.</p>
+      <p><strong>Starting at $100</strong></p>
+    </div>
   </div>
-
-  <div class="service">
-    <h3>Fertilization</h3>
-    <p>Feed your lawn for rich, green growth.</p>
-    <p>3–4x per year</p>
-    <p><strong>$50–$150 per application</strong></p>
-  </div>
-
-  <div class="service">
-    <h3>Weed Control</h3>
-    <p>Stop weeds before they start — and after.</p>
-    <p>2–4x per year</p>
-    <p><strong>$40–$100 per treatment</strong></p>
-  </div>
-
-  <div class="service">
-    <h3>Aeration & Overseeding</h3>
-    <p>Loosen soil and promote lush regrowth.</p>
-    <p>Fall recommended</p>
-    <p><strong>Aeration:</strong> $60–$150</p>
-    <p><strong>Overseeding:</strong> $50–$100</p>
-  </div>
-
-  <div class="service">
-    <h3>Mulching & Bed Care</h3>
-    <p>Enhance garden beds and trim shrubs.</p>
-    <p>1–2x per year</p>
-    <p><strong>Mulch:</strong> $100–$300</p>
-    <p><strong>Shrubs:</strong> $50–$150*</p>
-  </div>
-
-  <div class="service">
-    <h3>Leaf Removal</h3>
-    <p>Say goodbye to fall leaf buildup.</p>
-    <p>Weekly or as needed</p>
-    <p><strong>$75–$250 per visit*</strong></p>
-  </div>
-
-  <p style="text-align:center; font-style:italic;">*Pricing varies by lawn size and complexity.</p>
 </section>
+
+<section class="bundle-section">
+  <h2>Bundle & Save</h2>
+  <ul>
+    <li>✅ Weekly Plan — $140/month (includes mowing, trimming, and leaf pickup)</li>
+    <li>✅ Biweekly Plan — $80/month (includes mowing and edging)</li>
+  </ul>
+</section>
+
+<div class="cta">
+  <p>Don’t see what you need? Contact us for a custom package!</p>
+  <a href="contact.html" class="btn-cta">Get a Free Quote</a>
+</div>
 
 <footer>
   <p>&copy; 2025 Patriot Lawn Care | Serving Ashe County, NC & Beyond</p>
@@ -112,3 +179,4 @@
 
 </body>
 </html>
+
