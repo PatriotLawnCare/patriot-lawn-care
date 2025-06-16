@@ -1,128 +1,131 @@
-<!DOCTYPE html>
+<!DOCTYPE html>More actions
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Patriot Lawn Care</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       color: #000;
     }
-    header, nav, footer {
-      text-align: center;
-      background-color: #1a4d1a;
-      color: white;
+    header {
+      background: #cfe9cd;
       padding: 1rem;
+      text-align: center;
+    }
+    .announcement {
+      background: #ffd700;
+      color: #000;
+      text-align: center;
+      font-weight: bold;
+      padding: 1rem;
+    }
+    nav {
+      background: #1a1a1a;
+      padding: 1rem;
+      text-align: center;
     }
     nav a {
       color: white;
-      margin: 0 1rem;
+      margin: 0 1.5rem;
       text-decoration: none;
       font-weight: bold;
     }
+    .hero {
+      display: flex;
+      height: 70vh;
+      width: 100%;
+    }
+    .hero-left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1a4d1a;
+      background-color: #0f3d0f;
+    }
+    .hero-left img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      padding: 1rem;
+    }
+    .hero-right {
+      flex: 1;
+      background: url('background.jpg') no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+      padding: 2rem;
+    }
+    .hero-right-content {
+      max-width: 500px;
+    }
+    .hero-right-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-right-content p {
+      font-size: 1.5rem;
+    }
     .section {
+      padding: 4rem 1rem;
       max-width: 1200px;
       margin: auto;
-      padding: 2rem 1rem;
-    }
-    .section h2 {
-      text-align: center;
-      color: #2e8b57;
-      margin-bottom: 2rem;
     }
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      row-gap: 4rem;
-      column-gap: 2rem;
-      padding: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
     .service-card {
       background: white;
+      padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      overflow: hidden;
       text-align: center;
-      padding-bottom: 1rem;
-    }
-    .service-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
     }
     .service-card h3 {
       color: #2e8b57;
-      margin: 1rem 0 0.5rem;
+      margin-top: 1rem;
     }
-    .bundle-section {
-      background: #e0f5e6;
-      padding: 2rem 1rem;
-      border-radius: 8px;
-      margin-top: 3rem;
+    .service-card p {
+      font-size: 0.95rem;
     }
-    .bundle-section h2 {
-      color: #2e8b57;
-      text-align: center;
-    }
-    .bundle-section ul {
-      max-width: 700px;
-      margin: 1rem auto;
-      list-style: none;
-      padding: 0;
-    }
-    .bundle-section ul li {
-      padding: 0.75rem;
-      font-weight: bold;
-      border-bottom: 1px solid #ccc;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .btn-cta {
+    .service-card a {
       display: inline-block;
-      background: #2e8b57;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-    .jobber-login {
-      background: white;
-      border: 2px solid #2e8b57;
-      border-radius: 8px;
-      max-width: 900px;
-      margin: 2rem auto;
-      display: flex;
-      align-items: center;
-      padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .jobber-login img {
-      max-width: 100px;
-      margin-right: 1rem;
-    }
-    .jobber-login a {
-      background-color: #2e8b57;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
+      margin-top: 0.5rem;
+      color: #2e8b57;
       font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="patriot-lawn-care-logo.png" alt="Patriot Lawn Care Logo" style="max-height: 120px; display: block; margin: auto;">
-  <h1>Welcome to Patriot Lawn Care</h1>
+  <h2>Veteran owned. Community driven.</h2>
 </header>
+
+<div class="announcement">
+  Opening Summer of 2026
+</div>
 
 <nav>
   <a href="index.html">Home</a>
@@ -131,30 +134,54 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="section">
-  <h2>Our Lawn Care Services</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <img src="lawn-mowing.jpeg" alt="Lawn Mowing">
-      <h3>Lawn Mowing</h3>
-      <p>Includes mowing, trimming, and cleanup.</p>
-      <p><strong>Starting at $30 per visit</strong></p>
-    </div>
-    <div class="service-card">
-      <img src="fertilizer.jpeg" alt="Fertilization">
-      <h3>Fertilization</h3>
-      <p>Boost lawn health with professional nutrient treatments.</p>
-      <p><strong>Starting at $50 per treatment</strong></p>
-    </div>
-    <div class="service-card">
-      <img src="weed-control.jpeg" alt="Weed Control">
-      <h3>Weed Control</h3>
-      <p>Prevents and eliminates invasive weeds from your yard.</p>
-      <p><strong>Starting at $45 per treatment</strong></p>
+<section class="hero">
+  <div class="hero-left">
+    <img src="patriot-lawn-care-logo.png" alt="Patriot Lawn Care Logo">
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-content">
+      <h1>Professional Lawn Care Services</h1>
+      <p>Keeping your yard healthy, clean, and beautiful all year long.</p>
     </div>
   </div>
 </section>
 
+<section class="section">
+  <h2 style="text-align: center; color: #2e8b57;">Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Lawn Mowing</h3>
+      <p>Clean, even cuts that make your yard shine.</p>
+      <a href="services.html">Learn More</a>
+    </div>
+    <div class="service-card">
+      <h3>Fertilization</h3>
+      <p>Boost lawn health with the right nutrients.</p>
+      <a href="services.html">Learn More</a>
+    </div>
+    <div class="service-card">
+      <h3>Weed Control</h3>
+      <p>Stop weeds before they take over your lawn.</p>
+      <a href="services.html">Learn More</a>
+    </div>
+    <div class="service-card">
+      <h3>Aeration</h3>
+      <p>Improve soil and promote healthier grass.</p>
+      <a href="services.html">Learn More</a>
+    </div>
+    <div class="service-card">
+      <h3>Mulching</h3>
+      <p>Keep beds tidy and nutrient-rich with seasonal mulch.</p>
+      <a href="services.html">Learn More</a>
+    </div>
+    <div class="service-card">
+      <h3>Leaf Removal</h3>
+      <p>Clear the clutter and keep your lawn fresh in fall.</p>
+      <a href="services.html">Learn More</a>
+    </div>
+  </div>
+  </section>
+  
 <section class="jobber-login">
   <img src="jobber-logo.png" alt="Jobber Logo">
   <div>
