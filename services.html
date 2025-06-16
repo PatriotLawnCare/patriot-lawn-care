@@ -13,79 +13,95 @@
       background: #f4f4f4;
       color: #000;
     }
+
     header, nav, footer {
       text-align: center;
       background-color: #1a4d1a;
       color: white;
       padding: 1rem;
     }
+
     nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
+
     .section {
       max-width: 1200px;
       margin: auto;
       padding: 2rem 1rem;
     }
+
     .section h2 {
       text-align: center;
       color: #2e8b57;
       margin-bottom: 2rem;
     }
+
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+      column-gap: 2rem;
+      row-gap: 4rem;
+      padding: 1rem;
     }
+
     .service-card {
       background: white;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       overflow: hidden;
       text-align: center;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+      padding-bottom: 1rem;
     }
+
     .service-card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
+
     .service-card h3 {
       color: #2e8b57;
       margin: 1rem 0 0.5rem;
     }
+
+    .service-card p {
+      margin: 0.5rem 0;
+    }
+
     .bundle-section {
       background: #e0f5e6;
       padding: 2rem 1rem;
       border-radius: 8px;
       margin-top: 3rem;
     }
+
     .bundle-section h2 {
       color: #2e8b57;
       text-align: center;
     }
+
     .bundle-section ul {
       max-width: 700px;
       margin: 1rem auto;
       list-style: none;
       padding: 0;
     }
+
     .bundle-section ul li {
       padding: 0.75rem;
       font-weight: bold;
       border-bottom: 1px solid #ccc;
     }
+
     .cta {
       text-align: center;
       margin-top: 3rem;
     }
+
     .btn-cta {
       display: inline-block;
       background: #2e8b57;
@@ -118,14 +134,14 @@
       <h3>Lawn Mowing</h3>
       <p>Includes mowing, trimming, and cleanup.</p>
       <p><strong>Starting at $30 per visit</strong></p>
-      <p>Based on yard size</p>
+      <p><strong>Based on yard size</strong></p>
     </div>
     <div class="service-card">
       <img src="fertilizer.jpeg" alt="Fertilization">
       <h3>Fertilization</h3>
       <p>Boost lawn health with professional nutrient treatments.</p>
       <p><strong>Starting at $50 per treatment</strong></p>
-      <p>Based on yard size</p>
+      <p><strong>Based on yard size</strong></p>
     </div>
     <div class="service-card">
       <img src="weed-control.jpeg" alt="Weed Control">
@@ -136,23 +152,27 @@
     <div class="service-card">
       <img src="aeration.jpeg" alt="Aeration">
       <h3>Aeration</h3>
-      <p>Loosens soil to encourage deeper root growth and healthier grass.</p>
-      <p><strong>Starting at $100</strong></p>
+      <p>Improves lawn drainage and nutrient absorption.</p>
+      <p><strong>Starting at $60 per service</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="mulch.jpeg" alt="Mulching & Bed Care">
+      <h3>Mulching & Bed Care</h3>
+      <p>Beautify flower beds and retain soil moisture.</p>
+      <p><strong>$100–$300 depending on yard size</strong></p>
     </div>
     <div class="service-card">
       <img src="leaf-pickup.jpeg" alt="Leaf Removal">
       <h3>Leaf Removal</h3>
       <p>Full-service fall leaf cleanup to maintain a healthy yard.</p>
       <p><strong>Starting at $50</strong></p>
-      <p>Based on yard size</p>
     </div>
     <div class="service-card">
       <img src="trimming.jpeg" alt="Edging and Trimming">
       <h3>Edging & Trimming</h3>
       <p>Detailed edge cutting along sidewalks, driveways, and beds.</p>
       <p><strong>Included with mowing</strong></p>
-      <p>Starting at $25 without mowing</p>
-      <p>Based on yard size</p>
+      <p><strong>Starting at $25 without mowing</strong></p>
     </div>
     <div class="service-card">
       <img src="spring-fall-cleanup.jpeg" alt="Spring/Fall Cleanup">
@@ -161,11 +181,6 @@
       <p><strong>Starting at $100</strong></p>
     </div>
   </div>
-</section>
-
-<section class="bundle-section">
-  <h2>Ask Us About Our Bundle Options & Save!!</h2>
-  <ul></ul>
 </section>
 
 <div class="cta">
