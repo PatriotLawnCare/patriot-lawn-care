@@ -2,52 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our Services - Patriot Lawn Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patriot Lawn Care</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       color: #000;
     }
-
     header, nav, footer {
       text-align: center;
       background-color: #1a4d1a;
       color: white;
       padding: 1rem;
     }
-
     nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
-
     .section {
       max-width: 1200px;
       margin: auto;
       padding: 2rem 1rem;
     }
-
     .section h2 {
       text-align: center;
       color: #2e8b57;
       margin-bottom: 2rem;
     }
-
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      column-gap: 2rem;
       row-gap: 4rem;
+      column-gap: 2rem;
       padding: 1rem;
     }
-
     .service-card {
       background: white;
       border-radius: 8px;
@@ -56,52 +49,40 @@
       text-align: center;
       padding-bottom: 1rem;
     }
-
     .service-card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
-
     .service-card h3 {
       color: #2e8b57;
       margin: 1rem 0 0.5rem;
     }
-
-    .service-card p {
-      margin: 0.5rem 0;
-    }
-
     .bundle-section {
       background: #e0f5e6;
       padding: 2rem 1rem;
       border-radius: 8px;
       margin-top: 3rem;
     }
-
     .bundle-section h2 {
       color: #2e8b57;
       text-align: center;
     }
-
     .bundle-section ul {
       max-width: 700px;
       margin: 1rem auto;
       list-style: none;
       padding: 0;
     }
-
     .bundle-section ul li {
       padding: 0.75rem;
       font-weight: bold;
       border-bottom: 1px solid #ccc;
     }
-
     .cta {
       text-align: center;
       margin-top: 3rem;
     }
-
     .btn-cta {
       display: inline-block;
       background: #2e8b57;
@@ -111,31 +92,27 @@
       text-decoration: none;
       font-size: 1rem;
     }
-
     .jobber-login {
+      background: white;
+      border: 2px solid #2e8b57;
+      border-radius: 8px;
       max-width: 900px;
-      margin: 3rem auto;
+      margin: 2rem auto;
       display: flex;
       align-items: center;
-      gap: 1.5rem;
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-
     .jobber-login img {
-      width: 100px;
-      height: auto;
+      max-width: 100px;
+      margin-right: 1rem;
     }
-
     .jobber-login a {
-      display: inline-block;
-      background: #1a4d1a;
+      background-color: #2e8b57;
       color: white;
-      padding: 0.75rem 1.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 4px;
       font-weight: bold;
     }
   </style>
@@ -143,7 +120,7 @@
 <body>
 
 <header>
-  <h1>Our Lawn Care Services</h1>
+  <h1>Welcome to Patriot Lawn Care</h1>
 </header>
 
 <nav>
@@ -154,25 +131,36 @@
 </nav>
 
 <section class="section">
-  <h2>What We Offer</h2>
+  <h2>Our Lawn Care Services</h2>
   <div class="services-grid">
-    <!-- existing service-card divs here -->
+    <div class="service-card">
+      <img src="lawn-mowing.jpeg" alt="Lawn Mowing">
+      <h3>Lawn Mowing</h3>
+      <p>Includes mowing, trimming, and cleanup.</p>
+      <p><strong>Starting at $30 per visit</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="fertilizer.jpeg" alt="Fertilization">
+      <h3>Fertilization</h3>
+      <p>Boost lawn health with professional nutrient treatments.</p>
+      <p><strong>Starting at $50 per treatment</strong></p>
+    </div>
+    <div class="service-card">
+      <img src="weed-control.jpeg" alt="Weed Control">
+      <h3>Weed Control</h3>
+      <p>Prevents and eliminates invasive weeds from your yard.</p>
+      <p><strong>Starting at $45 per treatment</strong></p>
+    </div>
   </div>
 </section>
 
 <section class="jobber-login">
   <img src="jobber-logo.png" alt="Jobber Logo">
   <div>
-    <h3>Client Hub Access</h3>
-    <p>View invoices, pay bills, and manage your services through our Jobber Client Hub.</p>
-    <a href="https://clienthub.getjobber.com/client_hubs/9e353216-bdb6-4d59-a886-b3a2d6d69949/login/new?source=share_login" target="_blank">Access Jobber Hub</a>
+    <p>Access your account, view invoices, and pay bills with our Jobber Client Hub:</p>
+    <a href="https://clienthub.getjobber.com/client_hubs/9e353216-bdb6-4d59-a886-b3a2d6d69949/login/new?source=share_login" target="_blank">Login to Client Hub</a>
   </div>
 </section>
-
-<div class="cta">
-  <p>Don’t see what you need? Contact us for a custom package!</p>
-  <a href="contact.html" class="btn-cta">Get a Free Quote</a>
-</div>
 
 <footer>
   <p>&copy; 2025 Patriot Lawn Care | Serving Ashe County, NC & Beyond</p>
