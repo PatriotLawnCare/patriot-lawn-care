@@ -46,7 +46,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #1a4d1a;
       background-color: #0f3d0f;
     }
     .hero-left img {
@@ -57,6 +56,7 @@
     }
     .hero-right {
       flex: 1;
+      position: relative;
       background: url('background.jpg') no-repeat center/cover;
       display: flex;
       justify-content: center;
@@ -65,6 +65,25 @@
       color: white;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
       padding: 2rem;
+    }
+    .jobber-button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #2e8b57;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 0.9rem;
+      z-index: 10;
+      display: inline-flex;
+      align-items: center;
+    }
+    .jobber-button img {
+      height: 20px;
+      margin-right: 8px;
     }
     .hero-right-content {
       max-width: 500px;
@@ -139,6 +158,10 @@
     <img src="patriot-lawn-care-logo.png" alt="Patriot Lawn Care Logo">
   </div>
   <div class="hero-right">
+    <a class="jobber-button" href="https://clienthub.getjobber.com/client_hubs/9e353216-bdb6-4d59-a886-b3a2d6d69949/login/new?source=share_login" target="_blank">
+      <img src="jobber-logo.png" alt="Jobber Icon">
+      Client Hub
+    </a>
     <div class="hero-right-content">
       <h1>Professional Lawn Care Services</h1>
       <p>Keeping your yard healthy, clean, and beautiful all year long.</p>
@@ -180,8 +203,8 @@
       <a href="services.html">Learn More</a>
     </div>
   </div>
-  </section>
-  
+</section>
+
 <section style="display: flex; justify-content: center; padding: 3rem 1rem;">
   <div style="
     background: white;
@@ -210,8 +233,10 @@
     </div>
   </div>
 </section>
-</body>
-</html>
+
 <footer>
   <p>&copy; 2025 Patriot Lawn Care | Serving Ashe County, NC & Beyond</p>
 </footer>
+
+</body>
+</html>
