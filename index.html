@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Patriot Lawn Care</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Services - Patriot Lawn Care</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
@@ -13,118 +13,138 @@
       background: #f4f4f4;
       color: #000;
     }
-    header {
-      background: #cfe9cd;
-      padding: 1rem;
+
+    header, nav, footer {
       text-align: center;
-    }
-    .announcement {
-      background: #ffd700;
-      color: #000;
-      text-align: center;
-      font-weight: bold;
+      background-color: #1a4d1a;
+      color: white;
       padding: 1rem;
     }
-    nav {
-      background: #1a1a1a;
-      padding: 1rem;
-      text-align: center;
-    }
+
     nav a {
       color: white;
-      margin: 0 1.5rem;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
-    .hero {
-      display: flex;
-      height: 70vh;
-      width: 100%;
-    }
-    .hero-left {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #0f3d0f;
-    }
-    .hero-left img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-      padding: 1rem;
-    }
-    .hero-right {
-      flex: 1;
-      background: url('background.jpg') no-repeat center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-      padding: 2rem;
-    }
-    .hero-right-content {
-      max-width: 500px;
-    }
-    .hero-right-content h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .hero-right-content p {
-      font-size: 1.5rem;
-    }
+
     .section {
-      padding: 4rem 1rem;
       max-width: 1200px;
       margin: auto;
+      padding: 2rem 1rem;
     }
+
+    .section h2 {
+      text-align: center;
+      color: #2e8b57;
+      margin-bottom: 2rem;
+    }
+
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      column-gap: 2rem;
+      row-gap: 4rem;
+      padding: 1rem;
     }
+
     .service-card {
       background: white;
-      padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
       text-align: center;
+      padding-bottom: 1rem;
     }
+
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
     .service-card h3 {
       color: #2e8b57;
-      margin-top: 1rem;
+      margin: 1rem 0 0.5rem;
     }
+
     .service-card p {
-      font-size: 0.95rem;
+      margin: 0.5rem 0;
     }
-    .service-card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #2e8b57;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    footer {
-      background: #1a1a1a;
-      color: white;
-      text-align: center;
+
+    .bundle-section {
+      background: #e0f5e6;
       padding: 2rem 1rem;
+      border-radius: 8px;
       margin-top: 3rem;
+    }
+
+    .bundle-section h2 {
+      color: #2e8b57;
+      text-align: center;
+    }
+
+    .bundle-section ul {
+      max-width: 700px;
+      margin: 1rem auto;
+      list-style: none;
+      padding: 0;
+    }
+
+    .bundle-section ul li {
+      padding: 0.75rem;
+      font-weight: bold;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      background: #2e8b57;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .jobber-login {
+      max-width: 900px;
+      margin: 3rem auto;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .jobber-login img {
+      width: 100px;
+      height: auto;
+    }
+
+    .jobber-login a {
+      display: inline-block;
+      background: #1a4d1a;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h2>Veteran owned. Community driven.</h2>
+  <h1>Our Lawn Care Services</h1>
 </header>
-
-<div class="announcement">
-  Opening Summer of 2026
-</div>
 
 <nav>
   <a href="index.html">Home</a>
@@ -133,53 +153,26 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="hero">
-  <div class="hero-left">
-    <img src="patriot-lawn-care-logo.png" alt="Patriot Lawn Care Logo">
-  </div>
-  <div class="hero-right">
-    <div class="hero-right-content">
-      <h1>Professional Lawn Care Services</h1>
-      <p>Keeping your yard healthy, clean, and beautiful all year long.</p>
-    </div>
+<section class="section">
+  <h2>What We Offer</h2>
+  <div class="services-grid">
+    <!-- existing service-card divs here -->
   </div>
 </section>
 
-<section class="section">
-  <h2 style="text-align: center; color: #2e8b57;">Our Services</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <h3>Lawn Mowing</h3>
-      <p>Clean, even cuts that make your yard shine.</p>
-      <a href="services.html">Learn More</a>
-    </div>
-    <div class="service-card">
-      <h3>Fertilization</h3>
-      <p>Boost lawn health with the right nutrients.</p>
-      <a href="services.html">Learn More</a>
-    </div>
-    <div class="service-card">
-      <h3>Weed Control</h3>
-      <p>Stop weeds before they take over your lawn.</p>
-      <a href="services.html">Learn More</a>
-    </div>
-    <div class="service-card">
-      <h3>Aeration</h3>
-      <p>Improve soil and promote healthier grass.</p>
-      <a href="services.html">Learn More</a>
-    </div>
-    <div class="service-card">
-      <h3>Mulching</h3>
-      <p>Keep beds tidy and nutrient-rich with seasonal mulch.</p>
-      <a href="services.html">Learn More</a>
-    </div>
-    <div class="service-card">
-      <h3>Leaf Removal</h3>
-      <p>Clear the clutter and keep your lawn fresh in fall.</p>
-      <a href="services.html">Learn More</a>
-    </div>
+<section class="jobber-login">
+  <img src="jobber-logo.png" alt="Jobber Logo">
+  <div>
+    <h3>Client Hub Access</h3>
+    <p>View invoices, pay bills, and manage your services through our Jobber Client Hub.</p>
+    <a href="https://clienthub.getjobber.com/client_hubs/9e353216-bdb6-4d59-a886-b3a2d6d69949/login/new?source=share_login" target="_blank">Access Jobber Hub</a>
   </div>
 </section>
+
+<div class="cta">
+  <p>Don’t see what you need? Contact us for a custom package!</p>
+  <a href="contact.html" class="btn-cta">Get a Free Quote</a>
+</div>
 
 <footer>
   <p>&copy; 2025 Patriot Lawn Care | Serving Ashe County, NC & Beyond</p>
